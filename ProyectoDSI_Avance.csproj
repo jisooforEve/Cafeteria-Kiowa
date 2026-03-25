@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Fotos\**" />
+    <Compile Remove="Views\Home\ComplementosGringa.cshtml\**" />
+    <Compile Remove="wwwroot\fotos\Girnga.jpeg\**" />
+    <Compile Remove="wwwroot\fotos\Sanwicth.jpg\**" />
+    <Content Remove="Fotos\**" />
+    <Content Remove="Views\Home\ComplementosGringa.cshtml\**" />
+    <Content Remove="wwwroot\fotos\Girnga.jpeg\**" />
+    <Content Remove="wwwroot\fotos\Sanwicth.jpg\**" />
+    <EmbeddedResource Remove="Fotos\**" />
+    <EmbeddedResource Remove="Views\Home\ComplementosGringa.cshtml\**" />
+    <EmbeddedResource Remove="wwwroot\fotos\Girnga.jpeg\**" />
+    <EmbeddedResource Remove="wwwroot\fotos\Sanwicth.jpg\**" />
+    <None Remove="Fotos\**" />
+    <None Remove="Views\Home\ComplementosGringa.cshtml\**" />
+    <None Remove="wwwroot\fotos\Girnga.jpeg\**" />
+    <None Remove="wwwroot\fotos\Sanwicth.jpg\**" />
+  </ItemGroup>
+
+</Project>
