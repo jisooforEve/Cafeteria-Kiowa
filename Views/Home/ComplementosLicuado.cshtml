@@ -1,0 +1,82 @@
+﻿<div class="container contenedorToast">
+    <div class="row justify-content-center  mx-0">
+
+        <div class="col-auto">
+
+            <div class="card estiloPedido" style="width: 500px;">
+                <div class="card-body">
+                    <h4 class="Personalizar pt-4"> <strong>Personaliza tu licuado 🧋</strong> </h4>
+                    <p class="ParrafoPersonalizar pb-2">Selecciona los ingredientes que deseas</p>
+                    <div class="mt-2 pt-2 border-top">
+
+                        <form method="post">
+                            <div class="row justify-content-center">
+
+                                <p class="mt-3">¿Con que fruta quiere su licuado?</p>
+                                <div class="col-auto">
+                                    <input type="radio" value="Fresa"  class="btn-check" name="options-base" id="option8" autocomplete="off">
+                                    <label class="btn mb-3" for="option8"  style="border-color: #8C5A3C !important; border-style: solid !important; color: #8C5A3C">Fresa</label>
+                                </div>
+
+                                <!--Ya cuando se tenga la BD poner asp-for en cada input para que los datos que tenga ese input se pase a la base de datos-->
+
+                                <div class="col-auto">
+                                    <input type="radio" value="Platano" class="btn-check" name="options-base" id="option9" autocomplete="off">
+                                    <label class="btn mb-3" for="option9" style="border-color: #8C5A3C !important; border-style: solid !important; color: #8C5A3C">Platano</label>
+                                </div>
+
+                                <div class="col-auto">
+                                    <input type="radio" value="Mango" class="btn-check" name="options-base" id="option10" autocomplete="off">
+                                    <label class="btn mb-3" for="option10" style="border-color: #8C5A3C !important; border-style: solid !important; color: #8C5A3C">Mango</label>
+                                </div>
+
+                                <hr/>
+
+                               <p class="mt-3">Escoga el tipo de leche que quiere en su licuado</p>
+                               
+                                <div class="col-auto">
+                                    <input type="radio" value="Leche entera" class="btn-check" name="options-base" id="option11" autocomplete="off">
+                                    <label class="btn" for="option11" style="border-color: #8C5A3C !important; border-style: solid !important; color: #8C5A3C">Leche entera</label>
+                                </div>
+
+                                <div class="col-auto">
+                                    <input type="radio" value="Leche deslactosada" class="btn-check" name="options-base" id="option12" autocomplete="off">
+                                    <label class="btn" for="option12" style="border-color: #8C5A3C !important; border-style: solid !important; color: #8C5A3C">Leche deslactosada</label>
+                                </div>
+
+                                <div class="col-auto">
+                                    <input type="radio" value="Leche light" class="btn-check" name="options-base" id="option13" autocomplete="off">
+                                    <label class="btn" for="option13" style="border-color: #8C5A3C !important; border-style: solid !important; color: #8C5A3C">Leche light</label>
+                                </div>
+
+                                
+                            </div>
+                        </form>
+
+                        <hr />
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <a class="btn btn-success" asp-controller="Home" asp-action="CuentaPago">Aceptar</a>
+                        </div>
+                        <div class="col-auto">
+                            <a class="btn btn-danger" asp-controller="Home" asp-action="BebidaSeccion">Volver a menú</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        window.onload = function () {
+            confetti({ particleCount: 80, angle: 60, spread: 55, origin: { x: 0, y: 0.6 } });
+            confetti({ particleCount: 80, angle: 120, spread: 55, origin: { x: 1, y: 0.6 } });
+        };
+    </script>
+}

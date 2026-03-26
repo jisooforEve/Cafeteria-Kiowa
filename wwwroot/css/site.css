@@ -1,0 +1,315 @@
+
+.inter-uniquifier{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+.tituloCafe {
+    font-family: "Inter", sans-serif;
+    color: #635806;
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 25%;
+}
+
+.navbar {
+    background: #FFFEA8;
+    box-shadow: 5px 5px 15px 0;
+}
+
+.nav-item {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding: 12px;
+}
+
+    .nav-item:hover {
+        background: #C4AF4B;
+        width: auto;
+        border-radius: 5px;
+        font-weight: bold;
+        transform: translateY(-5px);
+        transition: transform 0.4s;
+    }
+
+.secciones {
+    text-decoration: none;
+    color: #635806 !important;
+    font-family: "Inter", sans-serif;
+    font-size: 23px;
+}
+
+
+
+.fa-solid {
+   font-size: 23px;
+ }
+
+.nav-link {
+    color: #635806 !important;
+    font-family: "Inter", sans-serif;
+    font-size: 23px;
+    margin-top: -6px;
+}
+
+body {
+    background: linear-gradient(to right, #FFC13D 5%, #FFCA57 15%, #FFE082 90%);
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif !important;
+}
+
+
+.BienvenidaTitulo {
+    font-family: "Inter", sans-serif;
+    color: #635806;
+    font-size: 40px;
+}
+
+
+.TituloComida {
+    font-family: "Inter", sans-serif;
+    color: #635806;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.Indicaciones {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    margin-top: 45px;
+    margin-bottom: 80px;
+}
+
+.card-img-top {
+    width: 100% !important;
+    object-fit: cover !important;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.card {
+    background: #FCF3D2;
+    border-color: #FCF3D2;
+    border-radius: 20px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+ transform: translateY(-15px) !important;
+ box-shadow: 0px 2px 15px 0;
+}
+
+.btn-primary {
+    background: #F5EB9D !important;
+    border-color: #F5EB9D !important;
+    width: 100%;
+    padding: 10px;
+    color: #635806;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+    .btn-primary:hover {
+        color: #635806 !important;
+    }
+
+.btnMas, .btnMenos {
+    background: #F5EB9D;
+    border-color: #F5EB9D;
+    width: 50px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.btnMas:active {
+    background: #91D06C;
+    border-color: #91D06C;
+}
+
+.btnMenos:active {
+    background: #FA5C5C;
+    border-color: #FA5C5C;
+}
+
+.contenedorToast {
+    margin-top: 100px;
+    overflow: visible !important;
+}
+
+.Personalizar{
+    color: #635806;
+    font-family: "Inter", sans-serif !important;
+    text-align: center;
+}
+
+.ParrafoPersonalizar {
+    color: #635806;
+    font-family: "Inter", sans-serif !important;
+    text-align: center;
+    font-size: 20px;
+}
+
+.btn-secondary {
+    background: #EFE1B5;
+    width: 100%;
+    color: #635806;
+}
+
+.btn-secondary:hover {
+    background: #EFE1B5;
+    width: 100%;
+    color: #635806;
+}
+
+    .btn-secondary:active {
+        background: #EFE1B5;
+        width: 100%;
+        color: #635806;
+    }
+
+.btn-check:checked + label {
+    background-color: #8C5A3C !important;
+    color: white !important;
+    border-color: #8C5A3C !important;
+}
+
+.btn-success{
+    width: 200px;
+    padding: 10px;
+}
+
+.btn-danger {
+    width: 200px;
+    padding: 10px;
+}
+
+.estiloPedido {
+    box-shadow: 5px 5px 10px 0px;
+}
+
+.carousel-item {
+    width: 100% !important;
+    height: 500px !important;
+    object-fit: cover !important;
+    object-position: center center;
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 350px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-item {
+        height: 220px !important;
+    }
+}
+
+.hero {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient( to right, rgba(60,30,10,0.92) 0%, rgba(60,30,10,0.5) 50%, transparent 100% );
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+    color: white;
+}
+
+.horario {
+    background: #C08552;
+    width: auto;
+    height: 65px;
+    text-align: center;
+    color:white;
+}
+
+.PlatillosDestacados {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-family: "Inter", sans-serif !important;
+    color: #635806;
+}
+
+.carusel{
+    margin: 50px auto;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    gap: 3em;
+}
+
+.carusel::-webkit-scrollbar{
+    display: none;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 3em;
+    animation: spin 10s infinite linear;
+}
+
+@keyframes spin{
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+
+.Funcionamiento {
+    margin-left: 40px;
+    margin-top: 20px;
+    color: #635806;
+}
+
+.Indicacioness {
+    background: #FFEABB;
+    height: 250px;
+    width: 350px;
+    margin-left: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.contenedorImg{
+    display: flex;
+    justify-content:center;
+}
+
+.labelForm {
+    font-size: 20px;
+    color: #635806;
+}
+
+.numTarjeta {
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    background: #FFEABB;
+    
+}
