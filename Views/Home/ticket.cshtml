@@ -1,0 +1,38 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model dynamic
+
+<h2>Ticket de compra</h2>
+
+<p><strong>Folio:</strong> @Model.folio</p>
+<p><strong>Fecha:</strong> @Model.fecha_hora</p>
+
+<table class="table">
+    <tr>
+        <th>Producto</th>
+        <th>Cantidad</th>
+        <th>Precio</th>
+        <th>Subtotal</th>
+    </tr>
+
+    @foreach (var item in Model.detalles)
+    {
+        var subtotal = item.cantidad * item.precio_unitario;
+
+        <tr>
+            <td>@item.producto</td>
+            <td>@item.cantidad</td>
+            <td>$@item.precio_unitario</td>
+            <td>$@subtotal</td>
+        </tr>
+    }
+</table>
+
+<h3>Total: $@Model.total</h3>
+
+<a asp-controller="Home" asp-action="Index" class="btn btn-primary">
+    Volver al inicio
+</a>

@@ -1,0 +1,40 @@
+﻿@model List<ProyectoDSI_Avance.Models.ItemCarrito>
+
+<h2>Carrito</h2>
+
+<table class="table">
+    <tr>
+        <th>Producto</th>
+        <th>Cantidad</th>
+        <th>Ingredientes</th>
+        <th>Precio</th>
+        <th>Total</th>
+        <th></th>
+    </tr>
+
+    @{
+        decimal total = 0;
+    }
+
+    @foreach (var item in Model)
+    {
+        var subtotal = item.Cantidad * item.Precio;
+        total += subtotal;
+
+        <tr>
+            <td>@item.Nombre</td>
+            <td>@item.Cantidad</td>
+            <td>@item.Personalizacion</td>
+            <td>$@item.Precio</td>
+            <td>$@subtotal</td>
+            <td>
+                <a asp-action="Eliminar" asp-route-idProducto="@item.IdProducto" class="btn btn-danger">Eliminar</a>
+            </td>
+        </tr>
+    }
+
+</table>
+
+<h3>Total: $@total</h3>
+
+<a asp-action="CuentaPago" class="btn btn-success">Siguiente</a>

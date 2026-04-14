@@ -1,0 +1,76 @@
+﻿<div class="container contenedorToast">
+    <div class="row justify-content-center  mx-0">
+
+        <div class="col-auto">
+
+            <div class="card estiloPedido" style="width: 500px;">
+                <div class="card-body">
+                    <h4 class="Personalizar pt-4"> <strong>Personaliza tus enchiladas suizas 😃</strong> </h4>
+                    <p class="ParrafoPersonalizar pb-2">Selecciona los ingredientes que deseas</p>
+                    <div class="mt-2 pt-2 border-top">
+
+                        <form method="post" asp-action="AgregarEspecial">
+                            <input type="hidden" name="idProducto" value="@ViewBag.IdProducto" />
+                            <input type="hidden" name="cantidad" value="@ViewBag.Cantidad" />
+                            <div class="row justify-content-center">
+
+                                <div class="col-auto">
+                                    <div class="btn-group mt-4" role="group">
+                                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" name="QuesoAsadero">
+                                        <label class="btn btn-outline-primary" for="btncheck1" style="border-color: #C08552; color: #C08552;">Queso asadero</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-auto">
+                                    <div class="btn-group mt-4" role="group">
+                                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" name="CremaLiquida">
+                                        <label class="btn btn-outline-primary" for="btncheck2" style="border-color: #C08552; color: #C08552;">Crema liquida</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-auto">
+                                    <div class="btn-group mt-4" role="group">
+                                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" name="TrozosDeAguacate">
+                                        <label class="btn btn-outline-primary" for="btncheck3" style="border-color: #C08552; color: #C08552;">Trozos de aguacate</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr />
+                            <div class="row justify-content-center">
+                                <div class="col-auto">
+                                    <button type="submit" class="btn btn-success">
+                                        Aceptar
+                                    </button>
+                                </div>
+
+                                <div class="col-auto">
+                                    <a class="btn btn-danger"
+                                       asp-controller="Home"
+                                       asp-action="ComidaSeccion">
+                                        Volver a menú
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+
+                
+                    </div>
+                    
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        window.onload = function () {
+            confetti({ particleCount: 80, angle: 60, spread: 55, origin: { x: 0, y: 0.6 } });
+            confetti({ particleCount: 80, angle: 120, spread: 55, origin: { x: 1, y: 0.6 } });
+        };
+    </script>
+}
+

@@ -1,0 +1,45 @@
+﻿
+<h1 class="TituloComida"> <strong>Ingresa los datos solicitados de la tarjeta</strong> </h1>
+
+<div class="row justify-content-center mt-5">
+	<div class="row-cols-1">
+		<div class="col-auto">
+			<div class="container mt-3 mb-5 p-5" style="background: #FFEABB; width: 50%; height: 700px; border-radius: 20px;">
+				<div class="contenedorImg">
+					<img class="img-fluid" src="@Url.Content("~/fotos/FotoKiowaCerrado.png")" style="border-radius: 50px;">
+				</div>
+
+				<div class="DatosTarjeta mt-4">
+				
+					@if (ViewBag.Error != null)
+					{
+						<div class="alert alert-danger">
+							@ViewBag.Error
+						</div>
+					}
+					<form method="post" asp-controller="Home" asp-action="Pagar">
+
+						<label class="labelForm"><strong>Ingrese los 10 dígitos de la tarjeta</strong></label><br />
+						<input class="numTarjeta" type="text" name="numero" required /> <br /><br />
+
+						<label class="labelForm"><strong>Ingrese el NIP de la tarjeta</strong></label><br />
+						<input class="numTarjeta" type="text" name="nip" required /> <br /><br />
+
+						<div class="row justify-content-center">
+
+							<div class="col-auto">
+								<button type="submit" class="btn btn-success">Confirmar</button>
+							</div>
+
+							<div class="col-auto">
+								<a class="btn btn-danger" asp-controller="Home" asp-action="Index">Volver al inicio</a>
+							</div>
+
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
